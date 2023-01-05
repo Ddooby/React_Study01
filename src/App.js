@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import { AppleOutlined,QuestionOutlined } from '@ant-design/icons';
 
 function App() {
   // jsx 중괄호 문법 - 데이터 바인딩
@@ -43,7 +44,7 @@ function App() {
         >
           Learn React!!!<br/>
         </a>
-        {sVal}<br/>
+        {sVal}<AppleOutlined /><br/>
         <div>{title[0]} <span onClick={ fnClickLike }>👍</span> {like[0]}</div>
         <div>{title[1]} <span>👍</span> {like[1]}</div>
 
@@ -58,7 +59,7 @@ function SampleComponent() {
     // 의미없는 태그 HTML 태그 병렬로 쓸 수 없기에 통으로 묶어줄 수 있는 태그
     <>
     <div>
-      컴포넌트 자리
+      컴포넌트 자리!<QuestionOutlined />
     </div>
     </>
   )
